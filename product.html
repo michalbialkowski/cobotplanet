@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body>
     <div id="section__page">
         <header id="section__page__header">
-            <div class="d-none d-lg-block py-3 border-bottom">
+            <div class="d-none d-lg-block py-3 border-bottom" id="section__page__header__top">
                 <div class="container">
                     <div class="row justify-content-end align-items-center">
                         <div class="col-auto">
@@ -42,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="py-4">
+            <div id="section__page__header__main" class="py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col">
@@ -67,17 +66,15 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-primary d-none d-lg-block">
+            <div class="bg-primary d-none d-lg-block py-2" id="section__page__header__menu">
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <ul class="nav py-3">
-                                <li class="nav-item mr-3"><a class="nav-link active text-uppercase text-white font-weight-bold p-0" href="category.html">Konfiguracje dla branży CNC</a></li>
-                                <li class="nav-item mr-3"><a class="nav-link text-uppercase text-white font-weight-bold p-0" href="category.html">Akcesoria do automatyzacji</a></li>
-                                <li class="nav-item mr-3"><a class="nav-link text-uppercase text-white font-weight-bold font-weight-bold p-0" href="category.html">Gotowe rozwiązania</a></li>
-                                <li class="nav-item mr-3"><a class="nav-link text-uppercase text-white font-weight-bold p-0" href="category.html">Wsparcie techniczne</a></li>
-                            </ul>
-                        </div>
+                    <div class="nav-wrapper">
+                        <ul class="nav text-center py-1">
+                            <li class="nav-item"><a class="nav-link text-uppercase text-white font-weight-bold px-0 py-2" href="category.html">Konfiguracje dla branży CNC</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase text-white font-weight-bold px-0 py-2" href="category.html">Akcesoria do automatyzacji</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase text-white font-weight-bold px-0 py-2" href="category.html">Gotowe rozwiązania</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase text-white font-weight-bold px-0 py-2" href="category.html">Wsparcie techniczne</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -221,8 +218,8 @@
                             <h2 class="text-primary font-weight-bold mb-3">Warto dokupić</h2>
                             <div class="row justify-content-center">
                                 <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 d-flex py-3">
-                                    <div class="card border-0">
-                                        <div class="pt-3 px-3 mb-3">
+                                    <div class="card p-3 rounded rounded-xl">
+                                        <div class="mb-3">
                                             <div class="ratio">
                                                 <div><img src="assets/img/robotiq-2f-85-w.png"></div>
                                             </div>
@@ -254,8 +251,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 d-flex py-3">
-                                    <div class="card border-0">
-                                        <div class="pt-3 px-3 mb-3">
+                                    <div class="card p-3 rounded rounded-xl">
+                                        <div class="mb-3">
                                             <div class="ratio">
                                                 <div><img src="assets/img/robotiq-2f-85-dual-gripper-w.png"></div>
                                             </div>
@@ -285,8 +282,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 d-flex py-3">
-                                    <div class="card border-0">
-                                        <div class="pt-3 px-3 mb-3">
+                                    <div class="card p-3 rounded rounded-xl">
+                                        <div class="mb-3">
                                             <div class="ratio">
                                                 <div><img src="assets/img/robotik-hand-e-w.png"></div>
                                             </div>
@@ -318,8 +315,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 d-flex py-3">
-                                    <div class="card border-0">
-                                        <div class="pt-3 px-3 mb-3">
+                                    <div class="card p-3 rounded rounded-xl">
+                                        <div class="mb-3">
                                             <div class="ratio">
                                                 <div><img src="assets/img/Robotiq-hand-e-dual-grapper-w.png"></div>
                                             </div>
@@ -353,19 +350,23 @@
                     </div>
                 </div>
             </div>
-            <div class="text-white bg-primary py-5">
+            <div class="text-white bg-primary py--60" style="background: url(&quot;assets/img/newsletter-bg.jpg&quot;) center / auto no-repeat;">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 py-3">
-                            <p class="text-uppercase text-left text-lg-right h2 font-weight-bold mb-0">Chcesz być na bieżąco z naszymi nowościami i promocjami?</p>
-                        </div>
-                        <div class="col-lg-6 py-3">
-                            <h1 class="h3 font-weight-bold mb-3">Zapisz się do newslettera</h1>
-                            <form>
-                                <div class="input-group input-group-lg rounded-pill overflow-hidden"><input class="form-control" type="text" placeholder="Podaj swój adres e-mail">
-                                    <div class="input-group-append"><button class="btn btn-secondary pr-4" type="button"><span class="text-uppercase font-weight-bold">Zapisz się</span></button></div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-10">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-xl-auto py-3">
+                                    <h1 class="text-center text-lg-left h1 font-weight-bold mb-3"><span class="mr-2">Zapisz się</span><span class="text-primary">do newslettera</span></h1>
+                                    <p class="text-center text-lg-left h4 mb-0">i odbieraj powiadomienia <br>o nowościach technologicznych <br>i naszych produktach</p>
                                 </div>
-                            </form>
+                                <div class="col-lg-5 py-3">
+                                    <form>
+                                        <div class="input-group input-group-lg bg-white overflow-hidden rounded-pill p-2"><input class="form-control" type="text" placeholder="Wpisz swój e-mail">
+                                            <div class="input-group-append"><button class="btn btn-primary rounded-pill" type="button"><span class="font-weight-bold">Zapisz</span></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -376,10 +377,10 @@
                         <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
                             <div class="card border-0">
                                 <div class="d-flex justify-content-center mb-4">
-                                    <div class="bg-primary ratio rounded-circle width--200 height--200 overflow-hidden" style="background: linear-gradient(0deg, #6d8ef9 0%, #1e3ebe 100%);">
+                                    <div class="ratio rounded-circle width--200 height--200 overflow-hidden">
                                         <div>
                                             <div class="ratio width--125 height--125">
-                                                <div><img class="d-block svg text-white" src="assets/img/cpu.svg"></div>
+                                                <div><img class="d-block svg text-primary" src="assets/img/cpu.svg"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -393,10 +394,10 @@
                         <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
                             <div class="card border-0">
                                 <div class="d-flex justify-content-center mb-4">
-                                    <div class="bg-primary ratio rounded-circle width--200 height--200 overflow-hidden" style="background: linear-gradient(0deg, #6d8ef9 0%, #1e3ebe 100%);">
+                                    <div class="ratio rounded-circle width--200 height--200 overflow-hidden">
                                         <div>
                                             <div class="ratio width--125 height--125">
-                                                <div><img class="d-block svg text-white" src="assets/img/robotic-arm.svg"></div>
+                                                <div><img class="d-block svg text-primary" src="assets/img/robotic-arm.svg"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -410,10 +411,10 @@
                         <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
                             <div class="card border-0">
                                 <div class="d-flex justify-content-center mb-4">
-                                    <div class="bg-primary ratio rounded-circle width--200 height--200 overflow-hidden" style="background: linear-gradient(0deg, #6d8ef9 0%, #1e3ebe 100%);">
+                                    <div class="ratio rounded-circle width--200 height--200 overflow-hidden">
                                         <div>
                                             <div class="ratio width--115 height--115">
-                                                <div><img class="d-block svg text-white" src="assets/img/process-2.svg"></div>
+                                                <div><img class="d-block svg text-primary" src="assets/img/process-2.svg"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -427,10 +428,10 @@
                         <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
                             <div class="card border-0">
                                 <div class="d-flex justify-content-center mb-4">
-                                    <div class="bg-primary ratio rounded-circle width--200 height--200 overflow-hidden" style="background: linear-gradient(0deg, #6d8ef9 0%, #1e3ebe 100%);">
+                                    <div class="ratio rounded-circle width--200 height--200 overflow-hidden">
                                         <div>
                                             <div class="ratio width--120 height--120">
-                                                <div><img class="d-block svg text-white" src="assets/img/technical-support.svg"></div>
+                                                <div><img class="d-block svg text-primary" src="assets/img/technical-support.svg"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -446,55 +447,27 @@
             </div>
         </main>
         <footer class="bg-light" id="section__page__footer">
-            <div class="py--30">
+            <div id="section__page__footer__main" class="py--30">
                 <div class="container pt-3">
                     <div class="row justify-content-between">
                         <div class="col py-3">
-                            <div class="row">
-                                <div class="col">
-                                    <h3 class="text-primary h5 font-weight-bold">Skontaktuj&nbsp;się z nami</h3>
-                                    <p class="lead">Misją Cobot Planet jest projektowanie i oferowanie akcesoriów do cobotów, dzięki którym uczestnicy rynku mogą w sposób efektywny, wygodny i bezpieczny automatyzować procesy biznesowe zarówno swoje, jak i swoich klientów.<br></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row justify-content-start">
-                                        <div class="col-12 col-md-auto col-lg-12 col-xl-auto">
-                                            <h3 class="text-muted h5 font-weight-bold">Kontakt</h3>
-                                            <p class="lead font-weight-normal mb-3"><strong>Tajęcina 103</strong><br><strong>36-002 Jasionka, Poland</strong></p>
-                                        </div>
-                                        <div class="col-auto">
-                                            <h3 class="text-muted h5 font-weight-bold">Biuro sprzedaży</h3>
-                                            <ul class="list-unstyled mb-3">
-                                                <li><i class="fas fa-phone mr-2"></i><a class="text-dark" href="#">+48 731 330 203</a></li>
-                                                <li><i class="far fa-envelope mr-2"></i><a class="text-dark" href="#">sales@cobotplanet.com</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-auto">
-                                            <h3 class="text-muted h5 font-weight-bold">Wsparcie techniczne</h3>
-                                            <ul class="list-unstyled mb-3">
-                                                <li><i class="fas fa-phone mr-2"></i><a class="text-dark" href="#">+48 664 967 148</a></li>
-                                                <li><i class="far fa-envelope mr-2"></i><a class="text-dark" href="#">support@cobotplanet.com</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="mb-4"><img class="d-block img-fluid" src="http://www.cobotplanet.com/images/cobot_planet_logo.png"></div>
+                            <p class="mb-0" style="line-height: 2em;">Misją Cobot Planet jest projektowanie i oferowanie akcesoriów do cobotów, dzięki którym uczestnicy rynku mogą w sposób efektywny, wygodny i bezpieczny automatyzować procesy biznesowe zarówno swoje, jak i swoich klientów.<br></p>
                         </div>
                         <div class="col-lg-auto">
                             <div class="row">
-                                <div class="col-auto py-3">
+                                <div class="col-12 col-sm-auto py-3">
                                     <h3 class="text-primary h5 font-weight-bold">Sklep</h3>
-                                    <ul class="list-unstyled mb-0">
+                                    <ul class="mb-0 pl-4" style="line-height: 2em;">
                                         <li><a class="text-body" href="category.html">Produkty</a></li>
                                         <li><a class="text-body" href="content.html">Dlaczego my</a></li>
                                         <li><a class="text-body" href="content.html">Serwis</a></li>
                                         <li><a class="text-body" href="content.html">Kontakt</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-auto py-3">
+                                <div class="col-12 col-sm-auto py-3">
                                     <h3 class="text-primary h5 font-weight-bold">Zamówienia</h3>
-                                    <ul class="list-unstyled mb-0">
+                                    <ul class="mb-0 pl-4" style="line-height: 2em;">
                                         <li><a class="text-body" href="content.html">Regulamin sklepu</a></li>
                                         <li><a class="text-body" href="content.html">Dostawa</a></li>
                                         <li><a class="text-body" href="content.html">Płatność</a></li>
@@ -504,17 +477,53 @@
                             </div>
                         </div>
                     </div>
+                    <div class="border-top pt-3">
+                        <div class="row justify-content-lg-between">
+                            <div class="col-lg-6">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-4 col-md-3 col-lg-4 py-lg-3 pr-md-4 pr-xl-5">
+                                        <h3 class="text-primary h5 font-weight-bold mb-0">Skontaktuj się z nami</h3>
+                                    </div>
+                                    <div class="col border-left mt-2 mt-sm-0 py-lg-3 border-xs-0 pl-md-4 pl-xl-5">
+                                        <div class="d-flex"><img class="mr-3" src="assets/img/map-pin.svg">
+                                            <p class="lead font-weight-normal mb-0"><strong>Tajęcina 103</strong><br><strong>36-002 Jasionka, Poland</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt-3 pt-lg-0">
+                                <div class="border-top border-lg-0">
+                                    <div class="row">
+                                        <div class="col-sm-6 py-3">
+                                            <h3 class="h5 font-weight-bold">Biuro sprzedaży</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a class="text-dark" href="#">+48 731 330 203</a></li>
+                                                <li><a href="#">sales@cobotplanet.com</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 py-3">
+                                            <h3 class="h5 font-weight-bold">Wsparcie techniczne</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a class="text-dark" href="#">+48 664 967 148</a></li>
+                                                <li><a href="#">support@cobotplanet.com</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row justify-content-lg-between my-3">
                         <div class="col-lg-auto order-1 order-lg-2 py-3">
                             <ul class="list-inline d-flex justify-content-center mb-0">
                                 <li class="list-inline-item"><a class="text-muted" href="content.html">Polityka prywatności</a></li>
-                                <li class="list-inline-item"><a class="text-muted" href="content.html">Polityka cookies</a></li>
+                                <li class="list-inline-item border-left pl-2"><a class="text-muted" href="content.html">Polityka cookies</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-auto order-2 order-lg-1 py-3">
                             <ul class="list-inline d-flex flex-column align-items-center flex-lg-row mb-0">
                                 <li class="list-inline-item">© 2020 Cobot Planet All rights reserved</li>
-                                <li class="list-inline-item">Projekt i realizacja:&nbsp;<a class="text-muted" href="#">KDMC</a></li>
+                                <li class="list-inline-item border-left pl-2">Projekt i realizacja:&nbsp;<a class="text-muted" href="#">KDMC</a></li>
                             </ul>
                         </div>
                     </div>

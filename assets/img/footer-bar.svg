@@ -1,0 +1,19 @@
+<svg id="Grupa_1" data-name="Grupa 1" xmlns="http://www.w3.org/2000/svg" width="309" height="11" viewBox="0 0 309 11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #336aed;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #061741;
+      }
+    </style>
+  </defs>
+  <path id="Rounded_Rectangle_5" data-name="Rounded Rectangle 5" class="cls-1" d="M1508.5,3368h202a5.5,5.5,0,0,1,0,11h-202A5.5,5.5,0,0,1,1508.5,3368Z" transform="translate(-1503 -3368)"/>
+  <path id="Rounded_Rectangle_6" data-name="Rounded Rectangle 6" class="cls-2" d="M1740.5,3368h66a5.5,5.5,0,0,1,0,11h-66A5.5,5.5,0,0,1,1740.5,3368Z" transform="translate(-1503 -3368)"/>
+</svg>
